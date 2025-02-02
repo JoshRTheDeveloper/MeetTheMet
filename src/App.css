@@ -28,3 +28,31 @@ h1 {
   display: flex;
   align-items: center;
 }
+
+select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #000000;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.dropdown-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.dropdown-container::after {
+  content: '▼';
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
