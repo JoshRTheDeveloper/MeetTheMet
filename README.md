@@ -88,6 +88,8 @@ The Metropolitan Museum of Art for providing a public API to access their collec
 
 The React community for their extensive documentation and support.
 
+MyerWeb for style reset
+
 Pixaby for image
 
 ## Feedback
