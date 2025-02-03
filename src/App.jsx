@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import './app.css'
 import axios from 'axios';
+import Dropdown from './components/dropdown.jsx';
 
 
 function App() {
@@ -25,12 +26,10 @@ const getDepartments = async () => {
   }
   };
 
-const handleDepartmentChange = (event) => {
-  const selectedDepartmentId = event.target.value;
-  const selected = departments.find(department => department.id === parseInt(selectedDepartmentId))
-  setSelectedDepartment(selected);
-}
 
+const handleDepartmentChange = (department) => {
+  setSelectedDepartment(department);
+};
 
 useEffect(() => {
   getDepartments();
@@ -51,20 +50,7 @@ console.log(departments)
 <div className='search-bar'>
 
 {departments.length > 0 ? (
-        <div>
-          
-         <label htmlFor='department-select'> Select a Department:</label>
-         <select id="department-select" onChange={handleDepartmentChange}>
-          {departments.map((department) => (
-<option key={department.departmentId} value={department.departmentID}>
-  
-  {department.displayName}
-
-</option>
-          ))}
-         </select>
-         
-        </div>
+        <Dropdown dropdown options={departments} onSelect={handleDepartmentChange}/>
       ) : (
         <p>Loading...</p>
       )}
