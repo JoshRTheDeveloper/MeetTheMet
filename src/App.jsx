@@ -107,14 +107,14 @@ useEffect(() => {
         {searchSubmitted && artResults.length === 0 ? (
     <p>No results found. Please try again...</p>
   ) : (
-          <div>
+          <div className='art-card-container'>
             {artResults.map((art) => (
               
               <div className='art-card' key={art.objectID}>
                   
                 <h3> {art.title}</h3>
                 {art.primaryImageSmall && 
-                    (<img src={art.primaryImageSmall} alt={art.title} width="100" />
+                    (<img src={art.primaryImageSmall} alt={art.title} />
                   )}
                   {art.artistDisplayName && <p>By: {art.artistDisplayName}</p>}
                   {!art.artistDisplayName && <p>By: Unkown</p>}
