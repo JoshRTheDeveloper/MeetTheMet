@@ -6,6 +6,12 @@ background-size: cover;
 background-position: -700px;
 }
 
+input:focus, 
+textarea:focus, 
+button:focus {
+  outline: none;
+}
+
 h1 {
  line-height: 5px;
 }
