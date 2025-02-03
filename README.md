@@ -85,7 +85,10 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 
 The Metropolitan Museum of Art for providing a public API to access their collection.
+
 The React community for their extensive documentation and support.
+
+Pixaby for image
 
 ## Feedback
 
