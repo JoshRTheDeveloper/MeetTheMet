@@ -19,10 +19,10 @@ function Dropdown({ options, onSelect }) {
     <div className='dropdown'>
       <div className='dropdown-head' onClick={clickDropdown}>
         {selectedDepartment ? selectedDepartment.displayName : 'Select a Department'} 
-        <div className='arrow'>
-        ▼
+        <div className='arrow'> 
+         ▼
         </div>
-      </div>
+       </div>
       {isOpen && (
         <div className='dropdown-selections'>
           {options.map((option) => (
@@ -32,7 +32,7 @@ function Dropdown({ options, onSelect }) {
           ))}
         </div>
       )}
-    </div>
+     </div>
   );
 }
 
