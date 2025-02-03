@@ -30,6 +30,11 @@ h1 {
   align-items: center;
 }
 
+.search-button {
+  background-color: white;
+  color: #000000;
+}
+
 .radio-buttons {
   display: flex;
   flex-direction: column;

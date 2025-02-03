@@ -100,7 +100,7 @@ useEffect(() => {
             </div>
               {searchOption === 'department' && departments.length > 0 && (<Dropdown options={departments} onSelect={handleDepartmentChange} />)}
               <input className='search-input' type="text" placeholder="Enter search term..." value={searchInput} onChange={handleSearchInput}/>
-              <button type="submit">Search</button>
+              <button className='search-button' type="submit">Search</button>
           </form>
         </div>
         <div className='results'>
