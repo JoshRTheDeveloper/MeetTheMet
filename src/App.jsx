@@ -46,7 +46,7 @@ console.log(departments)
  
  
 <h1>The Metropolitian</h1>
-<h1>Mesuem of Art</h1>
+<h1>Museum of Art</h1>
 <div className='search-bar'>
 
 {departments.length > 0 ? (
