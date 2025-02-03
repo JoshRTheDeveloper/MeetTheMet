@@ -8,7 +8,7 @@ function App() {
 const BASE_URL = 'https://collectionapi.metmuseum.org/public/collection/v1/';
 const [departments, setDepartments] = useState([]);
 const [selectedDepartment, setSelectedDepartment] = useState(null);
-
+const [searchInput, setSearchInput] = useState('');
 
 
 
@@ -27,9 +27,25 @@ const getDepartments = async () => {
   };
 
 
+
+
 const handleDepartmentChange = (department) => {
   setSelectedDepartment(department);
 };
+
+const handleSearchChange = (event) => {
+  setSearchInput(event.target.value)
+}
+
+const handleSearchSubmit = async (event) => {
+  event.preventDefault();
+  try {
+    const query ='/search?q+${encodeURIComponent(searchInput)}' +
+    (selectedDepartment ? '&')
+  }
+};
+
+
 
 useEffect(() => {
   getDepartments();
