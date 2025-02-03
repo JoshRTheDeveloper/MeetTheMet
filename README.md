@@ -78,7 +78,11 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 This project is licensed under the MIT License. See the LICENSE file for details.
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
+## Future Development 
 
+Pagination that shows ten results at a time. 
+A modal view for more information of each art work. 
+A better way to display results with no images. 
 
 ## Acknowledgements
 
